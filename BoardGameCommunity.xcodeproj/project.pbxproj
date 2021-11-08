@@ -16,6 +16,8 @@
 		7D0B7C1F2732141400EEB036 /* BoardGameCommunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B7C1E2732141400EEB036 /* BoardGameCommunityTests.swift */; };
 		7D0B7C292732141400EEB036 /* BoardGameCommunityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B7C282732141400EEB036 /* BoardGameCommunityUITests.swift */; };
 		7D0B7C2B2732141400EEB036 /* BoardGameCommunityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B7C2A2732141400EEB036 /* BoardGameCommunityUITestsLaunchTests.swift */; };
+		7DFC967A2732165700439373 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC96792732165700439373 /* UILabel+Extensions.swift */; };
+		7DFC967D2732182300439373 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFC967C2732182300439373 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7D0B7C242732141400EEB036 /* BoardGameCommunityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGameCommunityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0B7C282732141400EEB036 /* BoardGameCommunityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameCommunityUITests.swift; sourceTree = "<group>"; };
 		7D0B7C2A2732141400EEB036 /* BoardGameCommunityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameCommunityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DFC96792732165700439373 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		7DFC967C2732182300439373 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,11 @@
 		7D0B7C062732141300EEB036 /* BoardGameCommunity */ = {
 			isa = PBXGroup;
 			children = (
-				7D0B7C072732141300EEB036 /* AppDelegate.swift */,
-				7D0B7C092732141300EEB036 /* SceneDelegate.swift */,
-				7D0B7C0B2732141300EEB036 /* ViewController.swift */,
-				7D0B7C0D2732141300EEB036 /* Main.storyboard */,
-				7D0B7C102732141400EEB036 /* Assets.xcassets */,
-				7D0B7C122732141400EEB036 /* LaunchScreen.storyboard */,
 				7D0B7C152732141400EEB036 /* Info.plist */,
+				7D0B7C102732141400EEB036 /* Assets.xcassets */,
+				7DF449F72736D27D0087B33A /* Core Types */,
+				7DF449F82736D4320087B33A /* Home Screen */,
+				7DFC967B273216A100439373 /* View Extensions */,
 			);
 			path = BoardGameCommunity;
 			sourceTree = "<group>";
@@ -125,6 +127,34 @@
 				7D0B7C2A2732141400EEB036 /* BoardGameCommunityUITestsLaunchTests.swift */,
 			);
 			path = BoardGameCommunityUITests;
+			sourceTree = "<group>";
+		};
+		7DF449F72736D27D0087B33A /* Core Types */ = {
+			isa = PBXGroup;
+			children = (
+				7D0B7C072732141300EEB036 /* AppDelegate.swift */,
+				7D0B7C092732141300EEB036 /* SceneDelegate.swift */,
+				7D0B7C122732141400EEB036 /* LaunchScreen.storyboard */,
+				7D0B7C0D2732141300EEB036 /* Main.storyboard */,
+			);
+			path = "Core Types";
+			sourceTree = "<group>";
+		};
+		7DF449F82736D4320087B33A /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7D0B7C0B2732141300EEB036 /* ViewController.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		7DFC967B273216A100439373 /* View Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC96792732165700439373 /* UILabel+Extensions.swift */,
+				7DFC967C2732182300439373 /* UIView+Extensions.swift */,
+			);
+			path = "View Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DFC967A2732165700439373 /* UILabel+Extensions.swift in Sources */,
 				7D0B7C0C2732141300EEB036 /* ViewController.swift in Sources */,
+				7DFC967D2732182300439373 /* UIView+Extensions.swift in Sources */,
 				7D0B7C082732141300EEB036 /* AppDelegate.swift in Sources */,
 				7D0B7C0A2732141300EEB036 /* SceneDelegate.swift in Sources */,
 			);
